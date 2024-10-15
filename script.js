@@ -6,7 +6,7 @@ const DomElement = function (selector, width, height, bg, fontSize) {
     this.width = width;
     this.bg = bg;
     this.fontSize = fontSize;
-    this.createElement = function (text) {
+    this.createElement = (text) => {
         let elem;
         if (this.selector[0] === ".") {
             elem = document.createElement('div');
